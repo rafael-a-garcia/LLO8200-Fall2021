@@ -1,6 +1,8 @@
 ### --- WORK IN PROGRESS --- 
 
-### Syllabus
+### Organizational Materials
+
+#### Syllabus
 
 Please find the syllabus (updated frequently) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/LLO_8200_Syllabus_v2.pdf)
 
@@ -20,6 +22,9 @@ See LMS
 
 In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional_means_inclass.Rmd)
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rdata) 
+
+Assignment: [.Rmd File]()
+[Data Set]()
 
 ### 3\. Presenting Data: Descriptive Plots
 
