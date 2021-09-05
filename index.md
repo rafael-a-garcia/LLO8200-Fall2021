@@ -1,3 +1,5 @@
+### --- WORK IN PROGRESS --- 
+
 ### Syllabus
 
 Please find the syllabus (updated frequently) [at this link](https://raw.githack.com/wdoyle42/ll0_8200_summer_21/main/LLO-8200-Syllabus.html)
