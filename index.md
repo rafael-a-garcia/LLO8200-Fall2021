@@ -2,7 +2,7 @@
 
 ### Syllabus
 
-Please find the syllabus (updated frequently) [at this link](https://raw.githack.com/rafael-a-garcia/LLO8200-Fall2021/main/LLLO_8200_Syllabus_v2.pdf)
+Please find the syllabus (updated frequently) [at this link](https://raw.githack.com/rafael-a-garcia/LLO8200-Fall2021/main/LLO_8200_Syllabus_v2.pdf)
 
 ### Code for Each Topic 
 
