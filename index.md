@@ -17,6 +17,7 @@ See LMS
 ### 2\. Analyzing Data: Conditional Means
 
 See LMS
+
 In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional_means_inclass.Rmd)
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rdata) 
 
