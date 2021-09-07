@@ -42,3 +42,5 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
 [Lecture Notes](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/04-flat_data.Rmd) 
 
 Please watch async on LMS for this week. 
+
+[Assignments and Inclass pending]
