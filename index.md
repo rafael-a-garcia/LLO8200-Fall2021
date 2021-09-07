@@ -23,8 +23,8 @@ See LMS
 In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional_means_inclass.Rmd)
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rdata) 
 
-Assignment: [.Rmd File]()
-[Data Set]()
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/02-assignment.Rmd)
+[Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rdata)
 
 ### 3\. Presenting Data: Descriptive Plots
 
@@ -33,6 +33,7 @@ Assignment: [.Rmd File]()
 Please watch async on LMS for this week. 
 
 In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/03-plot_means_inclass.Rmd)
+[Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/attrition.Rdata)
 
 ### 4\. Getting Data: Flat Files and “Tidy Data” 
 
