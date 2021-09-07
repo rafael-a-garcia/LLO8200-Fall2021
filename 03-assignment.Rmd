@@ -1,6 +1,9 @@
 ---
 title: "Assignment 3"
-output: github_document
+author: "<name>"
+output:
+  word_document: default
+  html_document: default
 ---
 
 Use the `sc_debt.Rds` dataset to answer the following questions. As always, your assignment must be turned in as a .Rmd file. 
