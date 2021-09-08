@@ -5,12 +5,14 @@
 #### Syllabus
 
 Please find the syllabus (updated frequently) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/LLO_8200_Syllabus_v2.pdf)
+Most current schedule (updated 09-07-2021) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Schedule_09_07_2021.pdf)
 
 #### Code for Each Topic Listed in Next Section
 
 *Note: When new async videos are available, they will be linked under the appropriate week.*
-x
-*To access lecture notes and/or data sets use ctrl+click on a mac or right click on a pc, then click "save link as" and save to the class directory on your computer.*
+
+
+***To access lecture notes and/or data sets use ctrl+click on a mac or right click on a pc, then click "save link as" and save to the class directory on your computer.***
 
 ### 1\. Welcome to Data Science: Tools of the Trade
 
