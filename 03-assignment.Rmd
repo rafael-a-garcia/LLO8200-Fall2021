@@ -10,7 +10,7 @@ output:
 #knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = '<your working directory>')
 ```
-Use the `sc_debt.Rata` dataset to answer the following questions. As always, your assignment must be turned in as a .Rmd file. 
+Use the `sc_debt.Rds` dataset to answer the following questions. As always, your assignment must be turned in as a .Rmd file. 
 
 
 ```{r}
@@ -18,7 +18,7 @@ library(tidyverse)
 ```
 
 ```{r}
-df<-readRDS("sc_debt.Rdata")
+df<-readRDS("sc_debt.Rds")
 ```
 
 
