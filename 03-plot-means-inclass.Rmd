@@ -1,0 +1,115 @@
+---
+title: "03-plot-means-inclass.Rmd"
+author: "Doyle"
+date: "2/11/2021"
+output: github_document
+---
+
+```{r}
+library(tidyverse)
+library(RColorBrewer)
+```
+
+```{r}
+df<-readRDS("sc_debt.Rds")
+```
+
+
+## Plotting Means: In Class Work
+
+1. Using the student debt dataset, calculate and plot average SAT by region. Plot the result using a bar plot. Make it nicely labeled and beautiful in every way.
+
+```{r}
+
+
+df_sum<-sc%>%
+  group_by(region)%>%
+  summarize(mean_sat=mean(sat_avg,na.rm=TRUE))
+
+df_sum%>%
+  ggplot(aes(x=fct_reorder(region,mean_sat),y=mean_sat))+
+  geom_bar(stat = "identity",fill="lightblue")+
+  xlab("Region")+ylab("Mean SAT Scores")
+
+
+```
+
+
+2. Repeat the above plot, but use a dot plot and reverse the axes. 
+
+
+```{r}
+
+df_sum%>%
+  ggplot(aes(x=fct_reorder(region,mean_sat),y=mean_sat))+
+  geom_point()+
+  xlab("Region")+ylab("Mean SAT Scores")+
+  coord_flip()
+
+```
+
+
+
+3. Calculate and plot average SAT scores  by region  AND predominant degree type. Use a bar plot. 
+
+
+```{r}
+
+df_sum<-sc%>%
+  group_by(region,preddeg)%>%
+  summarize(mean_sat=mean(sat_avg,na.rm=TRUE))
+
+df_sum%>%
+  ggplot(aes(x=fct_reorder(region,mean_sat),y=mean_sat,fill=preddeg))+
+  geom_bar(stat="identity",position="dodge")+
+  ylab("Earnings")+xlab("Region")
+
+  
+
+```
+
+
+4. Change the color scheme of the above plot. 
+
+```{r}
+mypal=c("lightblue","orange")
+
+
+df_sum%>%
+  ggplot(aes(x=fct_reorder(region,mean_sat),y=mean_sat,fill=preddeg))+
+  geom_bar(stat="identity",position="dodge")+
+  scale_fill_manual(values=mypal)+
+  ylab("Earnings")+xlab("Region")
+
+
+
+```
+
+
+
+
+5. Calculate and plot SAT scores by region and predominant degree with a separate plot (hint:facet_wrap) for public and private institutions.  
+
+## NB: everything's the same except for facet_wrap
+```{r}
+
+
+df_sum<-sc%>%
+  group_by(region,preddeg,control)%>%
+  summarize(mean_sat=mean(sat_avg,na.rm=TRUE))
+
+
+df_sum%>%
+  ggplot(aes(x=fct_reorder(region,mean_sat),y=mean_sat,fill=preddeg))+
+  geom_bar(stat="identity",position="dodge")+
+  scale_fill_manual(values=mypal)+
+  ylab("Earnings")+xlab("Region")+
+  facet_wrap(~control)
+
+
+
+```
+
+
+
+
