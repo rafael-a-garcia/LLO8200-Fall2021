@@ -21,7 +21,7 @@ See LMS
 See LMS
 
 In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional_means_inclass.Rmd) and
-[Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rdata) 
+[Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/caschool.Rdata) 
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/02-assignment.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rdata)
@@ -35,7 +35,8 @@ Please watch async on LMS for this week.
 In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/03-plot_means_inclass.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/attrition.Rdata)
 
-Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/03-assignment.Rmd) 
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/03-assignment.Rmd) and
+[Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rdata)
 
 ### 4\. Getting Data: Flat Files and “Tidy Data” 
 
