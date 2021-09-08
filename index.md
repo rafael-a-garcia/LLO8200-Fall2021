@@ -1,3 +1,5 @@
+###***Anything on this course site supercedes materials found on the LMS (2VU) unless otherwise specified.***
+
 ### --- WORK IN PROGRESS --- 
 
 ### Organizational Materials
