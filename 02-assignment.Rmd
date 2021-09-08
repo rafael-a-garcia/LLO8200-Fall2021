@@ -10,14 +10,14 @@ output:
 #knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = '<your working directory>')
 ```
-For this assignment, you'll be working with the `sc_debt.Rds` to predict earnings levels of college graduates using conditional means. You'll need to select the college-level characteristics that you think might be related to earnings levels. Please complete the following steps:
+For this assignment, you'll be working with the `sc_debt.Ratas` to predict earnings levels of college graduates using conditional means. You'll need to select the college-level characteristics that you think might be related to earnings levels. Please complete the following steps:
 
 ```{r}
 library(tidyverse)
 ```
 
 ```{r}
-sc<-readRDS("sc_debt.Rdata")
+sc<-load("sc_debt.Rdata")
 ```
 
 
