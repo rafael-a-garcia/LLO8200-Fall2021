@@ -5,6 +5,7 @@
 #### Syllabus
 
 Please find the syllabus (updated frequently) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/LLO_8200_Syllabus_v2.pdf)
+
 Most current schedule (updated 09-07-2021) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Schedule_09_07_2021.pdf)
 
 #### Code for Each Topic Listed in Next Section
