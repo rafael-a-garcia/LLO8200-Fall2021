@@ -10,6 +10,24 @@ Please find the syllabus (updated frequently) [at this link](https://github.com/
 
 Most current schedule (updated 09-07-2021) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Schedule_09_07_2021.pdf)
 
+#### R and R-studio Help
+
+Installing R and R-Studio [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Installing%20R%20and%20RStudio.pdf)
+
+Updating R and R-studio [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Updating%20R%20and%20RStudio.pdf)
+
+Intro to R (Refresher Course by Professor Hartigan) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/IntroToR-Hartigan-08302021.pdf)
+
+#### Helpful references and Cheatsheets
+
+Quick Reference for R-Markdown files [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/rmarkdown-reference.pdf)
+
+Cheatsheet for R-Markdown files [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/rmarkdown-cheatsheet.pdf)
+
+Cheatsheet for ggplot2 [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/ggplot2-cheatsheet.pdf)
+
+Cheatsheet for color palettes in R [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/colorPaletteCheatsheet.pdf)
+
 #### Code for Each Topic Listed in Next Section
 
 *Note: When new async videos are available, they will be linked under the appropriate week.*
