@@ -68,13 +68,17 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
 
 ### Final Project Assignments and Due Dates
 
-Progress Report 1 - Due Oct 11 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/progress-report-01.Rmd)
+Rubric [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-final_product_rubric.pdf)
 
-Progress Report 2 - Due Oct 25 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/progress-report-02.Rmd)
+Available Datasets [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-available_datasets.pdf) 
 
-Progress Report 3 - Due Nov 08 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/progress-report-03.Rmd)
+Progress Report 1 - Due Oct 11 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-01.Rmd)
 
-Progress Report 4 - Due Nov 29 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/progress-report-04.Rmd)
+Progress Report 2 - Due Oct 25 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-02.Rmd)
+
+Progress Report 3 - Due Nov 08 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-03.Rmd)
+
+Progress Report 4 - Due Nov 29 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-04.Rmd)
 
 Final Report - Due Dec 14 [Example Reports - forthcoming]()
 
