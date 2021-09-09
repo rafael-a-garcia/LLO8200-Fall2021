@@ -18,15 +18,6 @@ Updating R and R-studio [at this link](https://github.com/rafael-a-garcia/LLO820
 
 Intro to R (Refresher Course by Professor Hartigan) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/IntroToR-Hartigan-08302021.pdf)
 
-#### Helpful references and Cheatsheets
-
-Quick Reference for R-Markdown files [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/rmarkdown-reference.pdf)
-
-Cheatsheet for R-Markdown files [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/rmarkdown-cheatsheet.pdf)
-
-Cheatsheet for ggplot2 [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/ggplot2-cheatsheet.pdf)
-
-Cheatsheet for color palettes in R [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/colorPaletteCheatsheet.pdf)
 
 #### Code for Each Topic Listed in Next Section
 
@@ -75,3 +66,24 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
 
 [Forthcoming]
 
+### Final Project Assignments and Due Dates
+
+Progress Report 1 - Due Oct 11 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/progress-report-01.Rmd)
+
+Progress Report 2 - Due Oct 25 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/progress-report-02.Rmd)
+
+Progress Report 3 - Due Nov 08 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/progress-report-03.Rmd)
+
+Progress Report 4 - Due Nov 29 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/progress-report-04.Rmd)
+
+Final Report - Due Dec 14 [Example Reports - forthcoming]()
+
+### Helpful references and Cheatsheets
+
+Quick Reference for R-Markdown files [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/rmarkdown-reference.pdf)
+
+Cheatsheet for R-Markdown files [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/rmarkdown-cheatsheet.pdf)
+
+Cheatsheet for ggplot2 [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/ggplot2-cheatsheet.pdf)
+
+Cheatsheet for color palettes in R [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/colorPaletteCheatsheet.pdf)
