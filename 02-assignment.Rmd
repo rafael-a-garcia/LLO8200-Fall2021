@@ -17,7 +17,7 @@ library(tidyverse)
 ```
 
 ```{r}
-sc<-load("sc_debt.Rdata")
+load("sc_debt.Rdata")
 ```
 
 
