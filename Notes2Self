@@ -1,0 +1,4 @@
+Lesson 1 needs to be put up completely
+
+Lesson 2 needs to be fixed back to sc_debt.Rds from sc_debt.Rdata. 
+  Does not allow for names() to be used. Not consistent with other scripts. 
