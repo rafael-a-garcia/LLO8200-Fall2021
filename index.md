@@ -34,8 +34,8 @@ See LMS
 
 See LMS
 
-In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional_means_inclass.Rmd) and
-[Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/caschool.Rdata) 
+In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional-means-inclass.Rmd) and
+[Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/caschool.rdata) 
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/02-assignment.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rdata)
