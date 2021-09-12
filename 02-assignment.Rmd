@@ -18,6 +18,7 @@ library(tidyverse)
 
 ```{r}
 load("sc_debt.Rdata")
+sc <- sc_debt
 ```
 
 
