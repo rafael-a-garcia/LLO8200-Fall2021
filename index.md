@@ -32,6 +32,8 @@ See LMS
 
 ### 2\. Analyzing Data: Conditional Means
 
+[Lecture Notes](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional-means.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rds) 
+
 See LMS
 
 In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional-means-inclass.Rmd) and
