@@ -41,7 +41,7 @@ In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/r
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/02-assignment.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rdata)
-  * Assignment Key [Forthcoming - Waiting on late submission]
+  * Assignment Key [R Markdown](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-assignment-key.Rmd) and [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-assignment-key.pdf)
 
 ### 3\. Presenting Data: Descriptive Plots
 
