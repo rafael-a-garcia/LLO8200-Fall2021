@@ -121,6 +121,10 @@ Progress Report 4 - Due Nov 29 [Instructions as .Rmd file](https://github.com/ra
 
 Final Report - Due Dec 14 [Example Reports - forthcoming]()
 
+Examples
+ * Example - Basic [Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/final_project_example_report.Rmd) and [Knitted](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/final_project_example_report.html)
+ * Example - Exemplary [Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/final_project_melody.Rmd) and [Knitted](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/final_project_melody.html)
+
 ### Helpful references and Cheatsheets
 
 Quick Reference for R-Markdown files [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/rmarkdown-reference.pdf)
