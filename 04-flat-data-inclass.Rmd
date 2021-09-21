@@ -44,12 +44,23 @@ save(fuel,file="fuel.Rdata")
 
 
 
-* Stumbleupon Kaggle challenge (get the train.tsv file):
-https://www.kaggle.com/c/stumbleupon/data 
+* World Cup 2014 Player Data
+The dataset includes information about players in the World Cup 2014. 
 
+https://opensource.indeedeng.io/imhotep/docs/sample-data/
+
+```{r}
+soccer<-read_tsv("http://indeedeng.github.io/imhotep/files/worldcupplayerinfo_20140701.tsv")
+
+save(soccer,file="soccer.Rdata")
+```
 
 
 
 * NCES data on Average Daily Attendance (*This data needs to be converted to be tidy*): http://nces.ed.gov/programs/digest/d13/tables/dt13_203.90.asp
 
+```{r}
+
+
+```
 
