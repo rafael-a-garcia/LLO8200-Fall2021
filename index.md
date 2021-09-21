@@ -28,13 +28,15 @@ Intro to R (Refresher Course by Professor Hartigan) [at this link](https://githu
 
 ### 1\. Welcome to Data Science: Tools of the Trade
 
-See LMS
+Lectures
+ * See LMS
 
 ### 2\. Analyzing Data: Conditional Means
 
 [Lecture Notes](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional-means.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rds) 
 
-See LMS
+Lectures
+ * See LMS
 
 In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/02-conditional-means-inclass.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/caschool.rdata) 
@@ -48,27 +50,60 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
 [Lecture Notes](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/03-plot_means.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/attrition.Rdata) 
   * [Answers to Lecture Qs](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/03-plot_means-Qs.pdf)
 
-Please watch async on LMS for this week. 
+Lectures
+  * Please watch async on LMS for this week. 
 
 In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/03-plot-means-inclass.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rds)
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/03-assignment.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/sc_debt.Rds)
+ * Assignment Key [R Markdown](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/03-assignment-key.Rmd) and [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/03-assignment-key.pdf)
 
 ### 4\. Getting Data: Flat Files and “Tidy Data” 
 
 [Lecture Notes](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/04-flat_data.Rmd) 
+  * [Answers to Lecture Qs](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/04-flat_data-Qs.pdf)
 
-Please watch async on LMS for this week. 
+Lectures
+  * Please watch async on LMS for this week. 
 
-In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/04-flat-data-inclass.Rmd)
+In Class Work (Updated 9-20-21): [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/04-flat-data-inclass.Rmd)
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/04-assignment.Rmd)
+ * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
 
 ### 5\. Analyzing Data: Linear Regression
 
-[Forthcoming]
+#### Part 1
+[Lecture Notes](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-1.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/area_data.Rds) 
+ * [Answers to Lecture Qs] (forthcoming)()
+ 
+Lectures
+  * Lecture 5.1       - On LMS 
+  * Lecture 5.2       - [Video](https://youtu.be/8P5CLj5Vy70)
+  * Lecture 5.3 & 5.4 - [Video](https://youtu.be/6s5__DICHDg)
+
+In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-inclass-1.Rmd)
+
+
+#### Part 2
+[Lecture Notes](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-2.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/area_data.Rds) 
+ * [Answers to Lecture Qs] (forthcoming)()
+
+Lectures
+ * Lecture 5.4a - [Video](https://www.youtube.com/watch?v=llfHYO_MujY)
+ * Lecture 5.4b - [Video](https://www.youtube.com/watch?v=hm33VbjQZMY)
+ * Lecture 5.5  - On LMS 
+
+In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-inclass-1.Rmd)
+
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/05-assignment.Rmd) and
+[Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/area_data.Rds)
+  * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
+
+### 6\. Presenting Data: Scatterplots
+(forthcoming)
 
 ### Final Project Assignments and Due Dates
 
