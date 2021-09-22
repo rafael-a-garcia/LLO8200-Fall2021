@@ -57,24 +57,34 @@ save(soccer,file="soccer.Rdata")
 
 
 
-* NCES data on Average Daily Attendance (*This data needs to be converted to be tidy*): http://nces.ed.gov/programs/digest/d13/tables/dt13_203.90.asp
+* NCES data on Average Daily Attendance (*This data needs to be converted to be tidy*): 
+*don't use this one ---http://nces.ed.gov/programs/digest/d13/tables/dt13_203.90.asp---
+* https://nces.ed.gov/programs/digest/d19/tables/dt19_203.90.asp
+
 
 ```{r}
 
 library(tidyverse)
 library(haven)
 library(readxl)
+library(curl) 
 
 if(file.exists("attend.xls")==FALSE){
-  download.file("https://nces.ed.gov/programs/digest/d13/tables/xls/tabn203.90.xls",destfile="attend.xls", mode="wb")
+  download.file("https://nces.ed.gov/programs/digest/d19/tables/xls/tabn203.90.xls",destfile="attend.xls", mode="wb")
   #For windows mode="wb" must be added, because Windows uses binary files. 
 attend<-read_excel("attend.xls",skip=4,col_names=FALSE)  
 }else{
   attend<-read_excel("attend.xls",skip=4,col_names=FALSE)
 }
 
-# I changed nothing... I restarted R and it worked this time. 
+if(file.exists("attend2.xls")==FALSE){
+ curl_download("https://nces.ed.gov/programs/digest/d19/tables/xls/tabn203.90.xls",destfile="attend2.xls")
+attend2<-read_excel("attend2.xls",skip=4,col_names=FALSE)  
+}else{
+ attend2<-read_excel("attend2.xls",skip=4,col_names=FALSE)
+}
 
+# For whatever reason there is error when accessing previous versions of this table, so the newest needs to be viewed and downloaded instead. Either of the above codes work 
 
 ```
 
