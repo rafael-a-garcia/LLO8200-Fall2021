@@ -69,6 +69,7 @@ Lectures
   * Please watch async on LMS for this week. 
 
 In Class Work (Updated 9-20-21): [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/04-flat-data-inclass.Rmd)
+  * [Rmd with code for the nces import](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/04-flat-data-inclass_coded.Rmd)
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/04-assignment.Rmd)
  * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
