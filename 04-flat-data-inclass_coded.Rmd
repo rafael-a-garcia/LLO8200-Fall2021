@@ -1,0 +1,80 @@
+In Class Work: Pre-processed or flat data
+-------------------
+
+Listed below are a series of data files stored on the web. Figure out which type of data file each on is and how to downlaod it and open it as a data frame in R. For each one, save the result as an appropriately named `RData` file.
+
+* School-level SAT results, New York City: 
+
+https://data.cityofnewyork.us/api/views/f9bf-2cp4/rows.csv?accessType=DOWNLOAD
+
+```{r}
+nyc<-read_csv("https://data.cityofnewyork.us/api/views/f9bf-2cp4/rows.csv?accessType=DOWNLOAD")
+
+save(nyc,file="nyc.Rdata")
+
+```
+
+
+
+
+* Survey of veterans data from Angrist (1993) "The Effect of Veterans Benefits on Education and Earnings"
+
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CAQYME
+
+
+
+```{r}
+sov<-read_dta("soviii_ang93b.dta")
+
+save(sov,file="sov.Rdata")
+```
+
+
+* Vehicle Fuel Type Count 
+
+https://data.ca.gov/group/transportation
+
+```{r}
+fuel<-read_csv("https://data.ca.gov/dataset/15179472-adeb-4df6-920a-20640d02b08c/resource/d304108a-06c1-462f-a144-981dd0109900/download/vehicle-fuel-type-count-by-zip-code.csv")
+
+save(fuel,file="fuel.Rdata")
+
+```
+
+
+
+
+* World Cup 2014 Player Data
+The dataset includes information about players in the World Cup 2014. 
+
+https://opensource.indeedeng.io/imhotep/docs/sample-data/
+
+```{r}
+soccer<-read_tsv("http://indeedeng.github.io/imhotep/files/worldcupplayerinfo_20140701.tsv")
+
+save(soccer,file="soccer.Rdata")
+```
+
+
+
+* NCES data on Average Daily Attendance (*This data needs to be converted to be tidy*): http://nces.ed.gov/programs/digest/d13/tables/dt13_203.90.asp
+
+```{r}
+
+library(tidyverse)
+library(haven)
+library(readxl)
+
+if(file.exists("attend.xls")==FALSE){
+  download.file("https://nces.ed.gov/programs/digest/d13/tables/xls/tabn203.90.xls",destfile="attend.xls", mode="wb")
+  #For windows mode="wb" must be added, because Windows uses binary files. 
+attend<-read_excel("attend.xls",skip=4,col_names=FALSE)  
+}else{
+  attend<-read_excel("attend.xls",skip=4,col_names=FALSE)
+}
+
+# I changed nothing... I restarted R and it worked this time. 
+
+
+```
+
