@@ -97,7 +97,7 @@ Lectures
  * Lecture 5.4b - [Video](https://www.youtube.com/watch?v=hm33VbjQZMY)
  * Lecture 5.5  - On LMS 
 
-In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-inclass-1.Rmd)
+In Class Work (updated 10-4-21): [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-inclass-2.Rmd)
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/05-assignment.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/area_data.Rds)
