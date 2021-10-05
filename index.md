@@ -104,8 +104,17 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
   * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
 
 ### 6\. Presenting Data: Scatterplots
-(forthcoming)
-Lecture Notes: [.Rmd File]
+
+Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/els.Rdata)  
+  * Answers to Lecture Qs: [Knitted PDF]()
+
+Lectures
+  * Please watch async on LMS for this week. 
+
+In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots-inclass.Rmd)
+
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/06-assignment.Rmd)
+ * Assignment Key (forthcoming) [R Markdown]()
 
 ### Final Project Assignments and Due Dates
 
