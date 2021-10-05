@@ -111,10 +111,15 @@ Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/r
 Lectures
   * Please watch async on LMS for this week. 
 
-In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots-inclass.Rmd)
+In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots-inclass.Rmd) and
+[Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/cex.RData) 
 
-Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/06-assignment.Rmd)
+
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/06-assignment.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/els.Rdata) 
  * Assignment Key (forthcoming) [R Markdown]()
+
+### 7\. Getting Data: Web Sources
+(Forthcoming)
 
 ### Final Project Assignments and Due Dates
 
