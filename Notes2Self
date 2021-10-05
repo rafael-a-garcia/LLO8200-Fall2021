@@ -1,7 +1,6 @@
 Lesson 1 needs to be put up completely
 
-Lesson 2 needs to be fixed back to sc_debt.Rds from sc_debt.Rdata. 
-  Does not allow for names() to be used. Not consistent with other scripts. 
+Lesson 2 needs to be fixed back to sc_debt.Rds from sc_debt.Rdata. Does not allow for names() to be used. Not consistent with other scripts. Lectures that have been subbed need to be added so students don't watch the ones on the LMS 
 
 Lesson 3 Assignment 3 has poses an interesting Question about how to handle the NAs
 
@@ -9,7 +8,7 @@ Lesson 4 Can this be merged with another Lesson? Seems very short and straightfo
 
 Lesson 5.1 Note difference between ` and ' 
 
-Lesson 5.2
+Lesson 5.2 Example in Lesson 5.5 isn't super helpful as it's not the same data set. 
 
 Lesson 6
 
