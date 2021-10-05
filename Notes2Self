@@ -2,3 +2,17 @@ Lesson 1 needs to be put up completely
 
 Lesson 2 needs to be fixed back to sc_debt.Rds from sc_debt.Rdata. 
   Does not allow for names() to be used. Not consistent with other scripts. 
+
+Lesson 3 Assignment 3 has poses an interesting Question about how to handle the NAs
+
+Lesson 4 Can this be merged with another Lesson? Seems very short and straightforward? Some issues with XLS import, consider just using CURL and maks sure  NCES dataset is current (will not import if not); TSV file inaccesible
+
+Lesson 5.1 Note difference between ` and ' 
+
+Lesson 5.2
+
+Lesson 6
+
+Lesson 7
+
+Lesson 8
