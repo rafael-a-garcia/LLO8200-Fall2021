@@ -78,7 +78,6 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
 
 #### Part 1
 Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-1.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/area_data.Rds) 
- * Answers to Lecture Qs: [Knitted PDF] (forthcoming)()
  
 Lectures
   * Lecture 5.1       - On LMS 
@@ -90,7 +89,6 @@ In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/r
 
 #### Part 2
 Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-2.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/area_data.Rds) 
- * Answers to Lecture Qs: [Knitted PDF] (forthcoming)()
 
 Lectures
  * Lecture 5.4a - [Video](https://www.youtube.com/watch?v=llfHYO_MujY)
