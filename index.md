@@ -96,6 +96,8 @@ Lectures
  * Lecture 5.5  - On LMS 
 
 In Class Work (updated 10-4-21): [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-inclass-2.Rmd)
+ * Worked Out In Class [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-inclass-2(WorkedOut).Rmd) and [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-regression-inclass-2-WorkedOut.pdf)
+ * Workflow Chart [PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/WorkflowChart.pdf)
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/05-assignment.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/area_data.Rds)
