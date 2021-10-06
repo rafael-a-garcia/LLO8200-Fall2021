@@ -1,0 +1,112 @@
+---
+title: 'Regression: In Class Work'
+author: "Garcia"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r}
+library(tidyverse)
+library(tidymodels)
+library(plotly)
+```
+
+```{r}
+ad<-read_rds("area_data.Rds")
+```
+
+1. Estimate a model that includes the census division (`division`)  of the area as the sole independent variable, and mobility `perc_moved in` as the dependent variable. Provide an interpretation of the results. "perc_moved_in~division"
+```{r}
+set.seed(35202)
+
+split_data<-ad%>%initial_split(prop=.5)
+
+ad_train<-training(split_data)
+
+ad_test<-testing(split_data)
+
+
+lm_fit <- 
+  linear_reg() %>% 
+  set_engine("lm")%>%
+  set_mode("regression")
+
+
+move_wf<-workflow()%>%
+  add_model(lm_fit)
+
+
+move_formula<-as.formula("perc_moved_in~division")
+
+
+move_rec<-recipe(move_formula,data=ad)%>%
+  step_dummy(division)
+
+move_wf<-move_wf%>%
+  add_recipe(move_rec)
+
+
+lm_results<-fit(move_wf,ad_train)
+
+lm_results%>%
+  tidy()
+
+lm_results%>%
+  pull_workflow_fit()%>%
+  glance()
+
+
+ad_test<-
+  predict(lm_results,ad_test)%>%
+  rename(pred1=.pred)%>%
+  bind_cols(ad_test)
+
+rmse_1<-ad_test%>%rmse(truth=perc_moved_in,estimate=pred1)  
+rmse_1
+
+```
+
+
+2. Add both income (`income_75`) and commute times (`perc_commute_30p`) to the above model and describe the coefficients for all three  of the variables. 
+```{r}
+
+move_formula<-as.formula("perc_moved_in~division+income_75+perc_commute_30p")
+
+
+move_rec<-recipe(move_formula,data=ad)%>%
+  step_dummy(division)
+
+move_wf<-move_wf%>%
+  update_recipe(move_rec)
+
+
+lm_results<-fit(move_wf,ad_train)
+
+lm_results%>%
+  tidy()
+
+lm_results%>%
+  pull_workflow_fit()%>%
+  glance()
+
+
+ad_test<-
+  predict(lm_results,ad_test)%>%
+  #PLEASE NOTE: new models being fit need new pred# names, so your first is pred1, the second is pred2, the third is pred3, etc. 
+  rename(pred2=.pred)%>%
+  bind_cols(ad_test)
+
+rmse_2<-ad_test%>%rmse(truth=perc_moved_in,estimate=pred2)  
+rmse_2
+```
+
+
+3. Which of the two models above fit the data better? How do you know?
+
+```{r}
+#This is a way of comparing the models in the same table. 
+rmse_comp<-rbind(rmse_1,rmse_2)
+rmse_comp
+```
+
