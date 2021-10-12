@@ -120,8 +120,25 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
  * Assignment Key (forthcoming) [R Markdown]()
 
 ### 7\. Getting Data: Web Sources
-(Forthcoming)
 
+Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/07-webscraping.Rmd) and  [Data Set Education (if needed)](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/educ_vars.Rdata)  and  [Data Set Income (if needed)](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/income_vars.Rdata)  
+  * Answers to Lecture Qs: [Knitted PDF]()
+
+Lectures
+ * Lecture 7.1-7.3 - On LMS
+ * Lecture 7.4 - [Video](https://www.youtube.com/watch?v=NHbs55PTb-g)
+ * Lecture 7.5 - On LMS
+
+In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/07-webscraping-inclass.Rmd)
+
+
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment.Rmd)   
+Alternate [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-alternate.Rmd) 
+ * Assignment Key (forthcoming) [R Markdown]()
+
+### 8\. Analyzing Data: Classification
+ (Forthcoming)
+ 
 ### Final Project Assignments and Due Dates
 
 Rubric [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-final_product_rubric.pdf)
