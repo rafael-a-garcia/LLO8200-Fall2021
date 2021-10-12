@@ -107,7 +107,7 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
 ### 6\. Presenting Data: Scatterplots
 
 Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/els.Rdata)  
-  * Answers to Lecture Qs: [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots-Qs.pdf)
+  * Answers to Lecture Qs: [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots_Qs.pdf)
 
 Lectures
   * Please watch async on LMS for this week. 
