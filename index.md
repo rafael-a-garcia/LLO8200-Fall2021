@@ -112,7 +112,7 @@ Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/r
 Lectures
   * Please watch async on LMS for this week. 
 
-In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots-inclass.Rmd) and
+In Class Work: Updated 10-12-21 [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots-inclass_marked.Rmd) and [PDF File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-scatterplots-inclass_marked.pdf) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/cex.RData) 
 
 
