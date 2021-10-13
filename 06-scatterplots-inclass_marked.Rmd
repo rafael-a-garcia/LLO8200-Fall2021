@@ -1,0 +1,170 @@
+---
+title: "Scatterplots-- in class"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+
+In Class Work: Scatterplots
+-----------------------------
+
+Complete the following steps using the `cex.Rdata` file:
+
+```{r}
+library(tidyverse)
+library(forcats)
+library(modelr)
+```
+```{r}
+load("cex.RData")
+
+names(cex)
+```
+
+1. Plot dining out as a function of income percentile rank.
+
+```{r}
+cex%>%
+  ggplot(aes(x=inc_rank,y=dine_out))+
+  geom_point(size=.1,alpha=.5)
+```
+
+
+2. Add a line of best fit to the above graphic. 
+
+```{r}
+cex%>%
+  ggplot(aes(x=inc_rank,y=(dine_out)))+
+  geom_point(size=.1,alpha=.5) +
+  geom_smooth(method="lm")
+```
+
+
+3. Now create a plot with a scale appropriate to dining out as the dependent variable. 
+
+```{r}
+
+cex%>%
+  ggplot(aes(x=dine_out))+
+  geom_density()
+
+cex%>%
+  ggplot(aes(x=dine_out))+
+  geom_density()+
+  scale_x_continuous(trans="log")
+
+cex%>%
+  ggplot(aes(x=inc_rank,y=dine_out+1))+
+  geom_point(size=.1,alpha=.5)+
+  scale_y_continuous(trans="log")
+
+
+```
+
+
+
+4. Add a line of best fit to your new graphic.
+
+```{r}
+cex%>%
+  ggplot(aes(x=inc_rank,y=(dine_out+1)))+
+  geom_point(size=.1,alpha=.5) +
+  scale_y_continuous(trans="log")+
+  geom_smooth(method="lm")
+```
+
+5. Create another plot with dining out on the y axis, income percentile rank on the x axis, and a categorical (factor) variable that differentiates the points. 
+
+```{r}
+cex%>%
+  ggplot(aes(x=inc_rank,y=(dine_out+1),color=sex_ref ))+
+  geom_point(size=.1,alpha=.5) +
+  scale_y_continuous(trans="log")+
+  geom_smooth(method="lm")
+
+cex%>%
+  ggplot(aes(x=inc_rank,y=(dine_out+1)))+
+  geom_point(size=.1,alpha=.5) +
+  scale_y_continuous(trans="log")+
+  geom_smooth(method="lm")
+```
+
+
+
+6. Run a regression that has (possibly transformed) dining out out as the dependent variable, with income and at least one other variable as predictors. What's the RMSE (log scale, if needed) from this model (relative to the testing dataset)? 
+
+```{r}
+library(tidymodels)
+
+set.seed(35202)
+
+#Split data
+split_data<-cex%>%initial_split(prop=.5)
+
+cex_train<-training(split_data)
+
+cex_test<-testing(split_data)
+
+
+#Specify model 
+lm_fit <- 
+  linear_reg() %>% 
+  set_engine("lm")%>%
+  set_mode("regression")
+
+#Specify formula
+dine_formula<-as.formula("log(dine_out +1)~inc_rank + grocery")
+
+#Fit to Training Data
+lm_results<-
+lm_fit%>%
+fit(dine_formula,data=cex_train)
+
+#Predict Testing Data
+cex_test<-
+    lm_results%>% 
+      predict(new_data=cex_test)%>% 
+      rename(pred1=.pred)%>% 
+      bind_cols(cex_test)
+
+#Calculate Fit
+rmse_1<-
+rmse(cex_test, truth=log(dine_out +1), estimate=pred1)
+
+rmse_1
+```
+
+
+7. Create new predictions from your model. 
+
+```{r}
+mod1<-lm(dine_formula,data=cex)
+
+summary(mod1)
+
+cex<-cex%>%add_predictions(mod1)%>%rename(pred_mod1=pred)
+
+```
+
+8. Create a plot showing predicted levels of dining out based on income and your other variable from the model in number 6. 
+```{r}
+
+gg<-ggplot(cex,aes(x=inc_rank,y=log(dine_out + 1)))
+gg<-gg+geom_point(alpha=.2,size=.25)
+
+gg<-gg+geom_smooth(data=cex,(aes(x=inc_rank,y=pred_mod1)))
+
+gg<-gg+xlab("Income Rank")+ylab("Log(Dining Out)")
+
+gg
+```
+
+9. Make your plot beautiful in every way. Make sure that axes are labeled appropriately, that colors are used well, and that legends help the reader to make sense of the plot. 
+```{r}
+
+gg <- gg + ggtitle("Dining Out vs. Income Rank")
+gg
+```
+
