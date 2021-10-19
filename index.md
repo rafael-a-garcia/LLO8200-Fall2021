@@ -137,7 +137,28 @@ Alternate [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-
  * Assignment Key (forthcoming) [R Markdown]()
 
 ### 8\. Analyzing Data: Classification
- (Forthcoming)
+
+#### Part 1
+Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/08-classification.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/za.Rdata) 
+ 
+Lectures
+  * Lecture 8.1       - On LMS 
+  * Lecture 8.2       - [Video](https://youtu.be/IIEvyvsVO7Q)
+  * Lecture 8.4       - On LMS 
+  * Lecture 8.5       - [Video](https://youtu.be/KbmEJkslBeE)
+
+#### Part 2
+
+Lectures
+ * Lecture 8.6 - [Video](https://youtu.be/IhCJOZJv_O8)
+
+In Class Work: [.Rmd File](08-classification-inclass.Rmd)
+
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment.Rmd) 
+  * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
+
+### 9\. Presenting Data: Plots and Tables for Classification
+(Forthcoming)
  
 ### Final Project Assignments and Due Dates
 
