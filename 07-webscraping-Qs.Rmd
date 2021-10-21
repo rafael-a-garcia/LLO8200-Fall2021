@@ -1,0 +1,153 @@
+---
+title: "Lecture 07 Qs"
+author: "Rafael Garcia"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+library(tidyverse)
+library(rvest)
+library(tigris)
+library(lubridate)
+library(gridExtra)
+library(tidycensus)
+```
+
+```{r}
+# 7.2 - Pride and Prejudice
+pnp_url = url("http://www.gutenberg.org/files/42671/42671-h/42671-h.htm")
+# reading the content (first 1500 lines)
+pnp = readLines(pnp_url, n = 500)
+
+grep("<h2>CHAPTER I.</h2>",pnp)
+
+grep("<p>",pnp)
+
+pnp[263:265]
+```
+
+```{r}
+
+##### 7.3 #########
+
+mile_wiki = "https://en.wikipedia.org/wiki/Mile_run_world_record_progression"
+
+# Get the page, pull the tables via html_table
+mile <- read_html(mile_wiki)%>%html_table(fill=TRUE)
+
+#Men's is the first table
+mile<-tbl_df(data.frame(mile[[1]]))
+
+#Convert time to seconds
+mile<-mile%>%
+  mutate(Time2=ms(as.character(Time)))#%>%
+  #mutate(Time2=period_to_seconds(Time2))
+
+mile$Time<-strtrim(mile$Time, width=4)
+
+mile<-mile%>%
+  mutate(Time2=ms(as.character(Time)))
+
+median(mile$Time2)
+```
+
+
+_Quick Exercise_ Repeat the above analysis for women's world record progression.
+
+
+######################################################################
+```{r}
+marathon_wiki = "https://en.wikipedia.org/wiki/Marathon_world_record_progression"
+
+# Get the page, pull the tables via html_table
+marathon <- read_html(marathon_wiki)%>%html_table(fill=TRUE)
+
+
+#Men's is the first table
+marathon<-tbl_df(data.frame(marathon[[2]]))
+
+#Convert time to seconds
+marathon<-marathon%>%
+  mutate(Time2=hms(as.character(Time)))%>%
+  mutate(Time2=period_to_seconds(Time2))
+
+#Marathons are 42,200 meters long
+marathon$speed<-(4.22e4)/marathon$Time2
+
+#Get dates in a usable format usin lubridate::mdy
+marathon$date<-mdy(marathon$Date)
+```
+
+
+## Progression of World Record Marathon Speed in Meters/Second
+```{r}
+
+marathon<-marathon%>%
+  mutate(Nationality=fct_reorder(.f=as_factor(Nationality),
+                                 .x=-speed,
+                                 .fun = max))
+
+g1<-ggplot(data=marathon,
+           aes(y=speed,x=date,
+               color=Nationality)
+           )  
+
+g1<-g1+geom_point()+
+           xlab("Date")+
+           ylab("Meters/Second")
+
+g1
+
+```
+
+
+```{r}
+
+############### 7.4 ############
+
+acs_key<-"a0f3f8cc65205f8040f93b4e9168f0f09a4cfdbb"
+
+census_api_key(acs_key,install=FALSE,overwrite =TRUE)
+
+
+```
+
+
+```{r}
+## Educ Characteristics by County for Texas
+
+income_vars<-get_acs(geography = "zcta",zcta= c(95003) ,state="CA", table="B19001",geometry = TRUE)
+
+
+income_vars<-income_vars%>%
+  select(GEOID,NAME,variable,estimate)%>%
+  spread(key=variable,value = estimate)
+
+## rename to be all lower case 
+names(income_vars)<-str_to_lower(names(income_vars))
+
+## Calculate prop with at least bachelor's for every county
+income_vars<-income_vars%>%
+  mutate(prop_75p=(b19001_013+
+                    b19001_014+
+                    b19001_015+
+                    b19001_016+
+                    b19001_017)/b19001_001)                      
+
+## simplify to just proportion
+income_vars<-income_vars%>%
+  select(geoid,name,prop_75p,geometry)
+
+```
+
+```{r}
+
+income_vars_2<-income_vars%>%as_tibble()%>%select(geoid,name,prop_75p)
+
+
+income_vars_2
+```
+
+
