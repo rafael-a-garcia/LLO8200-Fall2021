@@ -102,7 +102,7 @@ In Class Work (updated 10-4-21): [.Rmd File](https://github.com/rafael-a-garcia/
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/05-assignment.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/area_data.Rds)
-  * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
+  * Assignment Key (Forthcoming) [R Markdown](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-assignment-key.Rmd) and [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-assignment-key.pdf)
 
 ### 6\. Presenting Data: Scatterplots
 
@@ -117,19 +117,20 @@ In Class Work: Updated 10-12-21 [.Rmd File](https://github.com/rafael-a-garcia/L
 
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/06-assignment.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/els.Rdata) 
- * Assignment Key (forthcoming) [R Markdown]()
+ * Assignment Key (forthcoming) [R Markdown](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-assignment-key.Rmd) and [Knitted html](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-assignment-key.html)
 
 ### 7\. Getting Data: Web Sources
 
 Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/07-webscraping.Rmd) and  [Data Set Education (if needed)](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/educ_vars.Rdata)  and  [Data Set Income (if needed)](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/income_vars.Rdata)  
-  * Answers to Lecture Qs: [Knitted PDF]()
+  * Answers to Lecture Qs: [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/07-webscraping-Qs.Rmd)
 
 Lectures
  * Lecture 7.1-7.3 - On LMS
  * Lecture 7.4 - [Video](https://www.youtube.com/watch?v=NHbs55PTb-g)
  * Lecture 7.5 - On LMS
 
-In Class Work: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/07-webscraping-inclass.Rmd)
+In Class Work: Updated 10-20-21 [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/07-webscraping-inclass(workedout).Rmd) and [PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/07-webscraping-inclass-workedout-.pdf)
+ 
 
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment.Rmd)   
