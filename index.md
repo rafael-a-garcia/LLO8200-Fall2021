@@ -140,7 +140,7 @@ Alternate [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-
 ### 8\. Analyzing Data: Classification
 
 #### Part 1
-Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/08-classification.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/za.Rdata) 
+Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/08-classification.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/za.RData) 
  
 Lectures
   * Lecture 8.1       - On LMS 
