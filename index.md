@@ -162,6 +162,14 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
 ### 9\. Presenting Data: Plots and Tables for Classification
 (Forthcoming)
  
+### 10\. Cross Validation
+(Forthcoming)
+
+### Misc\. 
+(Forthcoming)
+
+Assignment: (Optional)
+
 ### Final Project Assignments and Due Dates
 
 Rubric [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-final_product_rubric.pdf)
