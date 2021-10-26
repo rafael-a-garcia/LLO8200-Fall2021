@@ -135,7 +135,8 @@ In Class Work: Updated 10-20-21 [.Rmd File](https://github.com/rafael-a-garcia/L
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment.Rmd)   
 Alternate [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-alternate.Rmd) 
- * Assignment Key (forthcoming) [R Markdown]()
+ * Assignment Key (forthcoming) [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-key.Rmd) and [Knitted PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-key.pdf)
+ * Assignment Alternate Key (forthcoming) [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-alternate-key.Rmd) and [Knitted html](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-alternate-key.html)
 
 ### 8\. Analyzing Data: Classification
 
