@@ -170,13 +170,13 @@ Available Datasets [at this link](https://github.com/rafael-a-garcia/LLO8200-Fal
 
 Progress Report 1 - Due Oct 11 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-01.Rmd)
 
-Progress Report 2 - Due Oct 25 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-02.Rmd)
+Progress Report 2 - Due Oct ~~25~~27 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-02.Rmd)
 
 Progress Report 3 - Due Nov 08 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-03.Rmd)
 
 Progress Report 4 - Due Nov 29 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-04.Rmd)
 
-Final Report - Due Dec 14 [Example Reports - forthcoming]()
+Final Report - Due Dec 14 
 
 Examples
  * Example - Basic [Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/final_project_example_report.Rmd) and [Knitted](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/final_project_example_report.pdf)
