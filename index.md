@@ -154,7 +154,8 @@ Lectures
 Lectures
  * Lecture 8.6 - [Video](https://youtu.be/IhCJOZJv_O8)
 
-In Class Work: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-classification-inclass.Rmd)
+In Class Work (Updated 10-27-21: still working on inclass next week)[.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-classification-inclass-worked.Rmd)
+
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment.Rmd) 
   * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
