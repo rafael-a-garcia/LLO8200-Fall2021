@@ -172,7 +172,7 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
  
 ### 10\. Cross Validation
 #### Part 1
-Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/10-cross_validation.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/pd.RData) 
+Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/10-cross_validation.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/pd.Rdata) 
  
 Lectures
   * Lecture 10.1      - On LMS 
@@ -188,7 +188,7 @@ Lectures
 
 In Class Work: (WiP) 
 
-Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/10-assignment.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/pd.RData) 
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/10-assignment.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/pd.Rdata) 
   * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
 
 ### Misc\. 
