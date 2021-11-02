@@ -150,7 +150,6 @@ Lectures
   * Lecture 8.5       - [Video](https://youtu.be/KbmEJkslBeE)
 
 #### Part 2
-
 Lectures
  * Lecture 8.6 - [Video](https://youtu.be/IhCJOZJv_O8)
 
@@ -161,10 +160,36 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
   * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
 
 ### 9\. Presenting Data: Plots and Tables for Classification
-(Forthcoming)
+Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/09-plots_classification.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/za.RData)  
+
+Lectures
+  * Please watch async on LMS for this week. 
+
+In Class Work: (WiP) 
+
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment.Rmd)
+ * Assignment Key (forthcoming) [R Markdown]() and [Knitted html]()
  
 ### 10\. Cross Validation
-(Forthcoming)
+#### Part 1
+Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/10-cross_validation.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/pd.RData) 
+ 
+Lectures
+  * Lecture 10.1      - On LMS 
+  * Lecture 10.2 pt1  - [Video](https://youtu.be/Q78A2M226z4)
+  * Lecture 10.2 pt2  - [Video](https://youtu.be/i1wi9DhC9Jc)
+  * Lecture 10.3      - [Video](https://youtu.be/pdikKDWiLY8)
+
+#### Part 2
+Lectures
+  * Lecture 10.4      - [Video](https://youtu.be/hfZ_Jcz99mk)
+  * Lecture 10.5      - [Video](https://youtu.be/B1JpLvCXhUQ)
+  * Lecture 10.6      - On LMS
+
+In Class Work: (WiP) 
+
+Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/10-assignment.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/pd.RData) 
+  * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
 
 ### Misc\. 
 (Forthcoming)
