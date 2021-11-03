@@ -153,7 +153,7 @@ Lectures
 Lectures
  * Lecture 8.6 - [Video](https://youtu.be/IhCJOZJv_O8)
 
-In Class Work (Updated 10-27-21: still working on inclass next week)[.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-classification-inclass-worked.Rmd)
+In Class Work (Updated 11-02-21)[.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-classification-inclass-worked2.Rmd) and [Knitted PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-classification-inclass-worked2.pdf) and [YouTube Explanation](https://youtu.be/2Nj3JcxrXAA)
 
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment.Rmd) 
