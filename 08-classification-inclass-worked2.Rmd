@@ -1,0 +1,214 @@
+---
+title: 'In Class Work: Classification'
+output: pdf_document
+---
+
+We'll be again working on a Kaggle-style competition to predict who gets pizza. Using the pizza dataset, find the best fit to the data. However, to qualify as a winner, you need to do the following: 
+
+1. Fit a model using logistic regression using the training dataset.
+
+
+2. Compute the predictions from your model from the testing dataset.
+
+3. Calculate the AUC (from the Receiver Operating Characteristic) for the predictions from your model from the testing dataset. Compare your results to the artice linked below. 
+
+
+
+```{r libraries}
+library(knitr)
+library(tidyverse)
+library(modelr)
+library(yardstick)
+library(tidymodels)
+library(probably)
+```
+
+
+```{r}
+load("za.RData")
+```
+
+
+```{r}
+# Training and testing datasets
+
+za_split<-initial_split(za,prop=.5)
+
+za_train<-training(za_split)
+
+za_test<-testing(za_split)
+
+```
+
+
+```{r linear_model}
+colnames(za)
+
+#  Model terms
+
+za_formula<-as.formula("got_pizza_f~
+             prev_raop_post+
+             raop_posts+
+
+             age+
+             words+
+             student+
+             karma")
+             
+        
+
+#table(za$got_pizza_f)
+```
+
+
+```{r}
+za%>%
+  ggplot(aes(x=(age)))+
+  geom_density()
+#Do we consider new users? Do we log transform?
+
+za%>%
+  ggplot(aes(x=log(karma+1)))+
+  geom_density()
+#Do we consider new users? Do we log transform?
+
+za%>%
+  ggplot(aes(x=log(total_posts+1)))+
+  geom_density()
+#Do we consider new users? Do we log transform?
+
+za%>%
+  ggplot(aes(x=raop_posts))+
+  geom_density()
+
+table(za$raop_posts)
+#Does this indicate that our var is binary? Does this *add* to our model? 
+
+za%>%
+  ggplot(aes(x=log(pop_request+1)))+
+  geom_density()
+#more or less normal
+
+za%>%
+  ggplot(aes(x=score))+
+  geom_density()
+#more or less normal
+             
+za%>%
+  ggplot(aes(x=log(words+1)))+
+  geom_density() 
+#do we log transform? #normal afterwards
+
+za%>%
+  ggplot(aes(x=log(activity+1)))+
+  geom_density()
+
+```
+
+
+```{r}
+logit_rec<-recipe(za_formula, data=za)%>%
+  step_log(age,offset = 1)%>%
+  step_log(words,offset=1)
+
+logit_mod <- 
+  logistic_reg() %>% 
+  set_engine("glm")%>%
+  set_mode("classification")
+```
+
+
+
+
+
+## Put the workflow together
+
+```{r}
+logit_wf<-workflow()%>%
+  add_recipe(logit_rec)%>%
+  add_model(logit_mod)
+```
+
+```{r}
+logit_results<-fit(logit_wf,data=za_train)
+```
+
+```{r}
+logit_results%>%
+  tidy()
+```
+
+```{r}
+logit_final<-last_fit(logit_wf,za_split)
+
+logit_final$.metrics
+```
+
+2. Compute the predictions from your model from the testing dataset.
+
+3. Calculate the AUC (from the Receiver Operating Characteristic) for the predictions from your model from the testing dataset. Compare your results to the artice linked below. 
+
+```{r}
+
+```
+
+
+```{r}
+
+
+```
+
+If we look at our results:
+
+
+```{r}
+logit_results%>%
+  tidy()
+```
+
+we see that 'raop_posts', 'age', and 'words' were all statistically significant. The next R chunk generates a hypothetical dataset. Arbitrarily, I chose to plot 'words' by 'prev_raop_post' to show the differences based on prediction. 
+
+4. Find a way to plot the predictions from your model. 
+```{r}
+#Here we are generating our hypothetical dataset. To do this we need to fix every value except the ones that we are graphing. So we replace continuous variables with their mean and categorical variables with their reference groups. 
+
+
+hypo_data<-za_train%>%data_grid(
+  age=mean(age,na.rm=TRUE),# fixes age to be constant
+  karma=mean(karma,na.rm=TRUE), #fixes karma to be constant
+  raop_posts=mean(raop_posts,na.rm=TRUE),#fixes raop_posts to be constant
+  prev_raop_post=as_factor(levels(prev_raop_post)), #generates values for all levels of prev_raop_post 
+  student=as_factor(levels(student)[1]), #fixes student to be 'No Student'
+  words=(seq_range(words,n=100, pretty=TRUE)) #generates values for words within the range of available values and ensures they are integers with the 'pretty' option
+)
+
+
+#The following predicts the probability of Pizza using our generated dataset and the estimates we obtained from out model. 
+plot_data<-logit_results%>%
+  predict(hypo_data,type="prob")%>%
+  bind_cols(hypo_data)%>%
+  rename(`Previously Posted in SubReddit`=prev_raop_post) #this step is just to help with graph below
+
+plot_data%>%
+ggplot(aes(x=words,y=.pred_Yes,color=`Previously Posted in SubReddit`))+ #plots words against our Prob(Pizza) estimated from the model results and separates them by 'prev_raop_post' values
+  geom_line()+
+  xlab("Number of Words")+
+  ylab("Prob(Pizza)")
+```
+
+Was this a good model? We already answered in-class, "no, not really". But we were able to quantify how good it was and even show graphically, that those differences in sensitivity are negligible. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For some ideas, see: http://cs.stanford.edu/~althoff/raop-dataset/altruistic_requests_icwsm.pdf.
