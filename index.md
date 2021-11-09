@@ -165,7 +165,7 @@ Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/r
 Lectures
   * Please watch async on LMS for this week. 
 
-In Class Work: (WiP) 
+In Class Work: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-plots_classification-inclass.Rmd)
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment.Rmd)
  * Assignment Key (forthcoming) [R Markdown]() and [Knitted html]()
