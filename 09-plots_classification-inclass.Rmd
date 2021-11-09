@@ -1,0 +1,476 @@
+---
+title: 'In Class Work: Plots Classification'
+output: pdf_document
+---
+
+Let's work with the model we constructed last week and see what we can do to graph the results in a more meaningful way. 
+
+
+```{r libraries}
+library(knitr)
+library(tidyverse)
+library(modelr)
+library(yardstick)
+library(tidymodels)
+library(probably)
+```
+
+*** Split Data ***
+
+```{r}
+load("za.RData")
+
+
+# Training and testing datasets
+
+za_split<-initial_split(za,prop=.5)
+
+za_train<-training(za_split)
+
+za_test<-testing(za_split)
+
+```
+
+*** Specify Model ***
+
+```{r}
+
+logit_mod <- 
+  logistic_reg() %>% 
+  set_engine("glm")%>%
+  set_mode("classification")
+
+```
+
+*** Specify Formula ***
+
+```{r}
+#Here we looked at the distributions of our potential predictors. 
+
+za%>%
+  ggplot(aes(x=(age)))+
+  geom_density()
+#Do we consider new users? Do we log transform?
+
+za%>%
+  ggplot(aes(x=log(karma+1)))+
+  geom_density()
+#Do we consider new users? Do we log transform?
+
+za%>%
+  ggplot(aes(x=log(total_posts+1)))+
+  geom_density()
+#Do we consider new users? Do we log transform?
+
+za%>%
+  ggplot(aes(x=raop_posts))+
+  geom_density()
+
+table(za$raop_posts)
+#Does this indicate that our var is binary? Does this *add* to our model? 
+
+za%>%
+  ggplot(aes(x=log(pop_request+1)))+
+  geom_density()
+#more or less normal
+
+za%>%
+  ggplot(aes(x=score))+
+  geom_density()
+#more or less normal
+             
+za%>%
+  ggplot(aes(x=log(words+1)))+
+  geom_density() 
+#do we log transform? #normal afterwards
+
+za%>%
+  ggplot(aes(x=log(activity+1)))+
+  geom_density()
+
+```
+
+```{r}
+
+#  This was the model we ran
+
+za_formula<-as.formula("got_pizza_f~
+             prev_raop_post+
+             raop_posts+
+             age+
+             words+
+             student+
+             karma")
+             
+```
+
+*** Specify Recipe ***
+
+```{r}
+logit_rec<-recipe(za_formula, data=za)%>%
+  step_log(age,offset = 1)%>%
+  step_log(words,offset=1)
+
+
+```
+
+*** Put Workflow Together ***
+
+```{r}
+logit_wf<-workflow()%>%
+  add_recipe(logit_rec)%>%
+  add_model(logit_mod)
+```
+
+
+
+*** Fit to Training Data ***
+
+```{r}
+
+logit_results<-fit(logit_wf,data=za_train)
+
+logit_results%>%
+  tidy()
+
+logit_final<-last_fit(logit_wf,za_split)
+
+logit_final$.metrics
+```
+
+We saw that 'raop_posts', 'age', and 'words' were all statistically significant. We don't have a whole lot that we can plot here because all of the predictors are, in fact continuous. 
+
+What CAN we do?
+
+
+##### Heat Maps #####
+
+To generate a heat map, we'll decide how we want to "bin" our heatmap. Dr. Doyle used a 5x5 for his example, but we can choose whatever makes the most sense for our particular situation
+```{r}
+summary(za$raop_posts)
+table(za$raop_posts)
+
+
+summary(za$words)
+table(za$words)
+```
+'raop_posts' naturally has 6 levels. We could break this up into quintiles or just leave it as is.
+
+
+```{r}
+za<-za%>%mutate(words_quintile=ntile(words,5))%>%
+  mutate(words_sextile=ntile(words,6))
+```
+
+Then we'll create a summary dataset that shows the probabilities of the outcome across all of the combined categories of the two independent variables. 
+
+```{R}
+za_sum_5<-za%>%group_by(raop_posts,words_quintile)%>%
+  summarize(prob_pizza=mean(got_pizza,na.rm=TRUE))%>%
+  arrange(-prob_pizza)
+
+za_sum_6<-za%>%group_by(raop_posts,words_sextile)%>%
+  summarize(prob_pizza=mean(got_pizza,na.rm=TRUE))%>%
+  arrange(-prob_pizza)
+
+```
+
+Drop any missing data:
+
+```{r}
+za_sum_5<-za_sum_5%>%filter(!(is.na(raop_posts)),!(is.na(words_quintile)))
+
+za_sum_6<-za_sum_6%>%filter(!(is.na(raop_posts)),!(is.na(words_sextile)))
+```
+
+Now we're ready to plot!
+
+```{r}
+
+#We'll start with quintiles
+gg5<-ggplot(za_sum_5,
+           aes(x=as.factor(raop_posts),
+               y=as.factor(words_quintile),fill=prob_pizza))
+gg5<-gg5+geom_tile()
+gg5<-gg5+scale_fill_gradient(low="white",high="red")
+#We could vary the color gradient to be multiple colors (like blue-red through white) check using ?scale_fill_gradient
+
+gg5<-gg5+xlab("Previous RAOP Posts")+ylab("Word Count (Quintile)")
+gg5<-gg5+theme(legend.title=element_blank())
+
+gg5<-gg5+geom_text(aes(label=round(prob_pizza,2)))
+# Omission of trailing zeros bugs me... The tweak below with format fixes this. 
+
+#gg5<-gg5+geom_text(aes(label=format(round(prob_pizza,2),nsmall=2)))
+
+
+gg5
+```
+
+```{r}
+
+#Do it again with Sextiles
+gg6<-ggplot(za_sum_6,
+           aes(x=as.factor(raop_posts),
+               y=as.factor(words_sextile),fill=prob_pizza))
+gg6<-gg6+geom_tile()
+gg6<-gg6+scale_fill_gradient(low="white",high="red")
+
+gg6<-gg6+xlab("Previous RAOP Posts")+ylab("Word Count (Sextile)")
+gg6<-gg6+theme(legend.title=element_blank())
+
+gg6<-gg6+geom_text(aes(label=format(round(prob_pizza,2),nsmall=2)))
+gg6
+```
+
+We can compare side by side with 'grid.arrange' in the gridExtra library.
+```{r}
+library(gridExtra)
+
+grid.arrange(gg5,gg6)
+
+#I suggest running it in console to get a window that can be manipulated. 
+
+```
+
+
+So variations on that are really all we could do with the previous untouched model. 
+
+
+What if we wanted to plot probabilities from our model?
+
+What do we need?
+
+1) a significant continous variable
+2) a significant categorical variable
+3) probabilites estimated from a logit model with (1) and (2) 
+
+
+This was our formula: 
+
+za_formula<-as.formula("got_pizza_f~
+             prev_raop_post+
+             raop_posts+
+             age+
+             words+
+             student+
+             karma")
+             
+and we know that 'raop_posts', 'age', and 'words' were statistically significant. 
+
+
+Let's check something really quick... 
+
+```{r}
+
+
+logit_results_parsnip_fit <- logit_results %>% 
+  extract_fit_parsnip()
+
+logit_fit <- logit_results_parsnip_fit$fit
+
+anova(logit_fit, test="Chisq")
+```
+
+``` {r}
+
+za_train<-za_train%>%
+  mutate(prev_raop2 = as.numeric(recode(prev_raop_post, "First Post"="0", "Posted Before"="1")))
+
+cor(cbind(za_train$raop_posts,za_train$prev_raop2),use="complete.obs")
+
+```
+
+So there seems to be redundancy between 'raop_posts' and 'prev_raop_post' that we couldn't see in just the omnibus (complete) logit model. So let's use 'pre_raop_post' as a grouping variable.  
+
+
+
+"Excuse me, we already did this...."
+
+Yes, we did. Let's try it again, this time with 'age' 
+
+
+```{r}
+#Here we are generating our hypothetical model. To do this we need to fix every value except the ones that we are graphing. So we replace continuous variables with their mean and categorical variables with their reference groups. 
+
+
+hypo_data<-za_train%>%data_grid(
+  age=seq_range(age,n=100),
+  karma=mean(karma,na.rm=TRUE), 
+  raop_posts=mean(raop_posts,na.rm=TRUE),
+  prev_raop_post=as_factor(levels(prev_raop_post)),  
+  student=as_factor(levels(student)[1]), 
+  words=median(words,na.rm=TRUE) 
+)
+
+
+#The following predicts the probability of Pizza using our generated dataset and the estimates we obtained from out model. 
+plot_data<-logit_results%>%
+  predict(hypo_data,type="prob")%>%
+  bind_cols(hypo_data)%>%
+  rename(`Previously Posted in SubReddit`=prev_raop_post) #this step is just to help with graph below
+
+plot_data%>%
+ggplot(aes(x=age,y=.pred_Yes,color=`Previously Posted in SubReddit`))+ #plots words against our Prob(Pizza) estimated from the model results and separates them by 'prev_raop_post' values
+  geom_line()+
+  xlab("Age of Reddit User")+
+  ylab("Prob(Pizza)")
+```
+
+
+We could also rerun a modified version of our model looking at "brief" writers and "verbose" writers.
+
+
+
+
+```{r}
+za<-za%>%
+  mutate(words_quintile=ntile(as.double(words),5))
+
+za2<-za%>%
+  filter(words_quintile==1|words_quintile==5)
+
+za2<-za2%>%
+  mutate(verbose = as.factor(words_quintile))
+
+```
+
+
+Let's make a bar chart
+
+```{r}
+za_sum<-za2%>%
+  group_by(verbose,prev_raop_post)%>%
+  summarize(prob_pizza=mean(got_pizza,na.rm=TRUE))%>%
+  mutate(perc_pizza=prob_pizza*100)
+
+za_sum
+```
+
+Remove NaNs
+```{r}
+za_sum<-za_sum%>%filter(!(is.na(prev_raop_post)),!(is.na(verbose)))
+```
+
+
+
+Then we can plot this using our familiar ggplot commands:
+
+```{r}
+gg1<-ggplot(za_sum,aes(y=perc_pizza,x=prev_raop_post,fill=verbose))
+gg1<-gg1+geom_bar(stat="identity",position="dodge")
+gg1<-gg1+xlab("Previous RAOP Post")+ylab("Pr(Pizza)")
+gg1<-gg1+theme(legend.title=element_blank())
+
+#gg1<-gg1+scale_fill_discrete(labels=c("Brief","Verbose"))
+
+gg1<-gg1+geom_text(aes(label=round(perc_pizza,1)),
+                   position=position_dodge(width=.9),
+                   vjust=-.25)
+gg1
+```
+
+
+
+We could also Plot our predicted data with our new 'verbose' variable. 
+
+
+*** Split the Data***
+``` {r}
+
+za_split2<-initial_split(za2,prop=.5)
+
+za_train2<-training(za_split2)
+
+za_test2<-testing(za_split2)
+```
+
+*** Specify Model ***
+
+```{r}
+
+logit_mod <- 
+  logistic_reg() %>% 
+  set_engine("glm")%>%
+  set_mode("classification")
+
+```
+
+*** Specify Formula ***
+
+
+```{r}
+za_formula<-as.formula("got_pizza_f~
+             prev_raop_post+
+             raop_posts+
+             age+
+             verbose+
+             student+
+             karma")
+             
+```
+
+*** Specify Recipe ***
+
+```{r}
+logit_rec<-recipe(za_formula, data=za2)%>%
+  step_log(age,offset = 1)%>%
+  #step_log(words,offset=1)
+  step_dummy(verbose)
+
+
+```
+
+*** Put Workflow Together ***
+
+```{r}
+logit_wf<-workflow()%>%
+  add_recipe(logit_rec)%>%
+  add_model(logit_mod)
+```
+
+
+
+*** Fit to Training Data ***
+
+```{r}
+
+logit_results<-fit(logit_wf,data=za_train2)
+
+logit_results%>%
+  tidy()
+
+logit_final<-last_fit(logit_wf,za_split2)
+
+logit_final$.metrics
+```
+'verbose' is STILL statistically significant. This *is* something we do have to check because we are discretizing a continuous variable. 
+
+
+
+
+Plot the predictions from our model. 
+```{r}
+hypo_data<-za_train2%>%data_grid(
+  age=(seq_range(words,n=100)),
+  karma=mean(karma,na.rm=TRUE), 
+  raop_posts=mean(raop_posts,na.rm=TRUE),
+  prev_raop_post=as_factor(levels(prev_raop_post)[1]),  
+  student=as_factor(levels(student)[1]), #
+  verbose=as_factor(levels(verbose)) 
+)
+
+
+#The following predicts the probability of Pizza using our generated dataset and the estimates we obtained from out model. 
+plot_data<-logit_results%>%
+  predict(hypo_data,type="prob")%>%
+  bind_cols(hypo_data)%>%
+  rename(`Verbosity`=verbose) #this step is just to help with graph below
+
+plot_data%>%
+ggplot(aes(x=age,y=.pred_Yes,color=`Verbosity`))+ 
+  geom_line()+
+  scale_color_discrete(labels=c("Brief","Verbose"))+
+  xlab("Age of Reddit Account")+
+  ylab("Prob(Pizza)")
+```
