@@ -157,7 +157,7 @@ In Class Work (Updated 11-02-21)[.Rmd File](https://raw.githubusercontent.com/ra
 
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment.Rmd) 
-  * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
+  * Assignment Key (Forthcoming) [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment-key.Rmd) and [Knitted PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment-key.pdf)
 
 ### 9\. Presenting Data: Plots and Tables for Classification
 Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/09-plots_classification.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/za.RData)  
