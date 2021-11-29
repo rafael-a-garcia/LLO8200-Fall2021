@@ -208,7 +208,7 @@ Progress Report 2 - Due Oct ~~25~~27 [Instructions as .Rmd file](https://github.
 
 Progress Report 3 - Due Nov 08 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-03.Rmd)
 
-Progress Report 4 - Due Nov 29 [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-04.Rmd)
+Progress Report 4 - Due Dec 06 ~~Nov 29~~ [Instructions as .Rmd file](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Final-Project-progress-report-04.Rmd)
 
 Final Report - Due Dec 14 
 
