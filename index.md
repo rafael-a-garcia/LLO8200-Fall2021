@@ -8,7 +8,7 @@
 
 Please find the syllabus (updated 09-14-2021) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/LLO_8200_Syllabus_v4.pdf)
 
-Most current schedule (updated 10-18-2021) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Schedule_11_28_2021.pdf)
+Most current schedule (updated 11-28-2021) [at this link](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Schedule_11_28_2021.pdf)
 
 #### R and R-studio Help
 
