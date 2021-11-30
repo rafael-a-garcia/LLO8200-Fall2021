@@ -102,7 +102,7 @@ In Class Work (updated 10-4-21): [.Rmd File](https://github.com/rafael-a-garcia/
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/05-assignment.Rmd) and
 [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/area_data.Rds)
-  * Assignment Key (Forthcoming) [R Markdown](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-assignment-key.Rmd) and [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-assignment-key.pdf)
+  * Assignment Key [R Markdown](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-assignment-key.Rmd) and [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/05-assignment-key.pdf)
 
 ### 6\. Presenting Data: Scatterplots
 
@@ -117,7 +117,7 @@ In Class Work: Updated 10-12-21 [.Rmd File](https://github.com/rafael-a-garcia/L
 
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/06-assignment.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/els.Rdata) 
- * Assignment Key (forthcoming) [R Markdown](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-assignment-key.Rmd) and [Knitted html](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-assignment-key.html)
+ * Assignment Key [R Markdown](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-assignment-key.Rmd) and [Knitted html](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/06-assignment-key.html)
 
 ### 7\. Getting Data: Web Sources
 
@@ -135,8 +135,8 @@ In Class Work: Updated 10-20-21 [.Rmd File](https://github.com/rafael-a-garcia/L
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment.Rmd)   
 Alternate [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-alternate.Rmd) 
- * Assignment Key (forthcoming) [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-key.Rmd) and [Knitted PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-key.pdf)
- * Assignment Alternate Key (forthcoming) [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-alternate-key.Rmd) and [Knitted PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-alternate-key.pdf)
+ * Assignment Key [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-key.Rmd) and [Knitted PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-key.pdf)
+ * Assignment Alternate Key [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-alternate-key.Rmd) and [Knitted PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/07-assignment-alternate-key.pdf)
 
 ### 8\. Analyzing Data: Classification
 
@@ -157,7 +157,7 @@ In Class Work (Updated 11-02-21)[.Rmd File](https://raw.githubusercontent.com/ra
 
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment.Rmd) 
-  * Assignment Key (Forthcoming) [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment-key.Rmd) and [Knitted PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment-key.pdf)
+  * Assignment Key [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment-key.Rmd) and [Knitted PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/08-assignment-key.pdf)
 
 ### 9\. Presenting Data: Plots and Tables for Classification
 Lecture Notes: [.Rmd File](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/09-plots_classification.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/za.RData)  
@@ -168,7 +168,7 @@ Lectures
 In Class Work: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-plots_classification-inclass.Rmd)
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment.Rmd)
- * Assignment Key (forthcoming) [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment-key.Rmd) and [Knitted html](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment-key.pdf)
+ * Assignment Key [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment-key.Rmd) and [Knitted html](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment-key.pdf)
  
 ### 10\. Cross Validation
 #### Part 1
