@@ -168,7 +168,7 @@ Lectures
 In Class Work: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-plots_classification-inclass.Rmd)
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment.Rmd)
- * Assignment Key (forthcoming) [R Markdown]() and [Knitted html]()
+ * Assignment Key (forthcoming) [R Markdown](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment-key.Rmd) and [Knitted html](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/09-assignment-key.pdf)
  
 ### 10\. Cross Validation
 #### Part 1
