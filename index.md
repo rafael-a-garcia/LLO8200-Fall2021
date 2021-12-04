@@ -192,9 +192,15 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
   * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
 
 ### Misc\. 
-(Forthcoming)
+Lecture Notes: [Slides PDF Forthcoming Monday]
 
-Assignment: (Optional)
+Lectures: (All optional)
+ * Lecture 12.1      - On LMS
+ * Lecture 12.7      - On LMS
+ * Lecture 14.1      - On LMS
+ * Lecture 14.6      - On LMS
+
+Assignment: No Assignment (Rejoice!)
 
 ### Final Project Assignments and Due Dates
 
