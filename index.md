@@ -1,7 +1,3 @@
-***Please note: Anything on this course site supercedes materials found on the LMS (2VU) unless otherwise specified.***
-
-### --- WORK IN PROGRESS --- 
-
 ### Organizational Materials
 
 #### Syllabus
@@ -192,7 +188,7 @@ Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO820
   * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
 
 ### Misc\. 
-Lecture Notes: [Slides PDF Forthcoming Monday]
+Lecture Notes: [PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/10-assignment.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Fin.pdf) 
 
 Lectures: (All optional)
  * Lecture 12.1      - On LMS
