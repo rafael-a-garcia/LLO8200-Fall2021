@@ -185,8 +185,7 @@ Lectures
 In Class Work: (WiP) 
 
 Assignment: [.Rmd File](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/10-assignment.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/pd.Rdata) 
-  * Assignment Key (Forthcoming) [R Markdown]() and [Knitted PDF]()
-
+  * Assignment Key (Forthcoming) [R Markdown](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/10-assignment-key.Rmd) and [Knitted PDF](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/10-assignment-key.pdf)
 ### Misc\. 
 Lecture Notes: [PDF](https://raw.githubusercontent.com/rafael-a-garcia/LLO8200-Fall2021/main/10-assignment.Rmd) and  [Data Set](https://github.com/rafael-a-garcia/LLO8200-Fall2021/raw/main/Fin.pdf) 
 
